@@ -1,84 +1,529 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amit's Resume</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <a href="https://www.google.com">Click Me</a>
-    <table>
-        <tr>
-        <td>
-            <img width="200" src="amit.jpg" alt="amit's photo">
-        </td>
-        <td>
-            <h1>Amit Kumar Gupta</h1>
-            <p><i> I am a civil engineer and later switch on web development</i></p>
-            <p>I ❤️ Web Development and coding enthusiast🚀</p>
-            <a href="#contact"><p>connect with me</p></a>
-            <hr>
-            <a target="_blank" href="https://www.google.com"><p>Search on Google</p></a>
-        </td>
+    <!-- ==== header start -->
+    <header>
+        <!-- profile -->
+        <div class="profile">
+            <img width="" src="amitphoto1.jpg" alt="amit's photo">
+            <h1>Amit Gupta</h1>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
 
-        </tr>
-    </table>
-    
+        </div>
+        <!-- NavBar -->
+        <nav>
+            <ul>
+                <li><a href="#home" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#about"><i class="fa-solid fa-user"></i> Aboutme</a></li>
+                <li><a href="#portfolio"><i class="fa-solid fa-briefcase"></i> Portfolio</a></li>
+                <li><a href="#service"><i class="fa-solid fa-server"></i> Services</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+            </ul>
+
+
+        </nav>
+
+        <!-- footer -->
+        <div class="footer">
+            <p>&copy; Copyright 2023 <br>Designed By <a href="https://amit.xyz" target="_blank">amit.xyz</a></p>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Toggle -->
+    <i class="fa-solid fa-bars" id="MenuBtn"></i>
+    <!-- header End -->
+
+    <!-- ALL BODY CONTENT -->
+    <main>
+        <!-- Home Section Start -->
+        <section id="home">
+            <div class="home-row">
+                <h2>Hi, This is <br>Amit Gupta. </h2>
+                <p>i'm a <span class="auto-input"></span></p>
+            </div>
+        </section>
+        <!-- Home Section End -->
+
+
+        <!-- === About Section Start === -->
+        <section id="about">
+            <h1 class="sub-heading">About Me</h1>
+            <div class="divider"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima corrupti harum laborum praesentium
+                numquam
+                explicabo inventore tempore corporis nihil repellendus?Lorem ipsum dolor sit amet, consectetur
+                adipisicing
+                elit. Accusamus libero vel consequuntur veritatis eveniet cupiditate officiis aut quasi tempora dolores!
+            </p>
+
+            <div class="about-col">
+                <!-- img-col -->
+                <div class="img-col"> <img src="amitphoto1.jpg" alt="..."></div>
+
+                <!-- information -->
+                <div class="info-col">
+                    <h2>Frontend Developer!</h2>
+                    <p class="sub-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, officiis!</p>
+                    <div class="icon-list-col">
+
+                        <!-- left-side list -->
+                        <div class="icon-list">
+                            <ul>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Age:</strong> <span>29</span></li>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Website:</strong>
+                                    <span>www.amit.xyz</span>
+                                </li>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Phone</strong> <span>+91
+                                        7052938441</span></li>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>City:</strong> <span>Lucknow</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- right-side list -->
+                        <div class="icon-list">
+                            <ul>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Email:</strong>
+                                    <span>amituit8441@gmail.com</span>
+                                </li>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Degree:</strong> <span>B.Tech</span>
+                                </li>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Birthday</strong> <span>8 Sept
+                                        1994</span></li>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Freelance:</strong>
+                                    <span>Available</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <!-- About section End -->
+        <!-- ................. -->
    
-    <!-- headers -->
-    <h2>Education</h2>
-    <table border="">
-        <tr>
-            <th>Course</th>
-            <th>Institute</th>
-            <th>Year</th>
-            <th>Result</th>
-        </tr>
-        <tr>
-            <td>B.tech in Civil Engg</td>
-            <td>UIT,Prayagraj</td>
-            <td>2016</td>
-            <td>61.67</td>
-        </tr>
-        <tr>
-            <td>12<sup>th</sup>Grade</td>
-            <td>PTIC</td>
-            <td>2010</td>
-            <td>67.66</td>
-        </tr>
+                
 
-    </table>
+        <!-- ====Skills Section Start -->
+        <section id="skill">
+            <h1 class="sub-heading">Skills</h1>
+            <div class="divider"></div>
+            <p class="sub-para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi accusamus culpa neque
+                vel, dolorum dolores qui fuga aspernatur suscipit consequatur odit id, blanditiis iste hic at nemo
+                veniam. Temporibus assumenda veritatis quam voluptas numquam nesciunt iusto mollitia illum sit a debitis
+                et tempora culpa reiciendis voluptates inventore aliquam, totam vero!</p>
+
+            <div class="skill-row">
+                <!-- skill-1 -->
+                <div class="skill-box">
+                    <div class="skill-info">
+                        <h2>HTML</h2>
+                        <h2>85%</h2>
+                    </div>
+                    <div class="skill-outer-line">
+                        <div class="skill-inner-line" style="width: 85%;"></div>
+                    </div>
+                </div>
 
 
-    <h2>Intership</h2>
-    <p> <strong>Indian Railway</strong> </p>
-    <ul>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem incidunt nemo vero placeat maiores at, impedit, quidem iste magni, rem blanditiis assumenda ut labore facere voluptate fugiat est voluptas facilis aspernatur numquam. Accusamus esse similique officiis incidunt eius recusandae quam!</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias officiis vel illum aliquam voluptatibus eligendi laborum minus laboriosam suscipit laudantium!</li>
+                <!-- skill-2 -->
+                <div class="skill-box">
+                    <div class="skill-info">
+                        <h2>CSS</h2>
+                        <h2>85%</h2>
+                    </div>
+                    <div class="skill-outer-line">
+                        <div class="skill-inner-line" style="width: 85%;"></div>
 
-    </ul>
-    <h2>Project</h2>
-    <h3>Public Works Deptt</h3>
-    <ul>
-        <li>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quas eaque, nostrum officiis placeat delectus eveniet nobis ex quae distinctio.</p>
+                    </div>
+                </div>
 
-        </li>
-        <li>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veniam dolorum beatae provident voluptate deleniti hic molestias voluptatibus et odio!</p>
 
-        </li>
-    </ul>
-    <hr>
-    <!-- Main Section End -->
-    <h3 id="contact" >Connect With Me</h3>
-    <p>Email:amitkumarguptace0007@gmail.com</p>
-    <p>Mobile No: 7052938441</p>
-    <a href="aboutus.html"><p>About Us</p></a>
-    <br><br><br>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, libero. Qui placeat, cumque facere fuga sapiente quaerat hic soluta neque, officiis omnis sequi doloremque suscipit tempore? Rerum omnis esse minima dolor illo vel quia sequi voluptatibus placeat pariatur voluptatum ipsum excepturi, inventore quidem corporis debitis a recusandae ut doloribus? Distinctio perferendis, numquam quibusdam quam optio cupiditate dolorem. Similique nulla aut unde eius, ipsum earum in accusantium incidunt beatae natus eum quibusdam, veritatis vel praesentium quo ab fugiat cumque officiis dolorem dolor modi rerum? Facere tenetur neque non harum, quibusdam, hic repudiandae error mollitia distinctio dolore iure voluptatem corporis optio ipsa. Vero facere, ipsum minima voluptatem rem corrupti esse recusandae blanditiis vitae unde in architecto accusantium reiciendis veniam doloribus soluta explicabo voluptates? Commodi reprehenderit vel dolor tempore autem sunt necessitatibus accusantium quae architecto ipsum. In rerum ipsam commodi impedit ratione nisi obcaecati expedita eum modi minima, non, deleniti totam quidem magni beatae fugit adipisci quaerat hic quos, laborum cupiditate soluta magnam! Repellendus quisquam maxime nemo at voluptas? Error blanditiis commodi ex rem rerum expedita debitis molestias aliquid ipsa, eius maxime, explicabo eligendi quisquam eum at, placeat ipsum maiores magni architecto magnam inventore esse! Deserunt dolores vel labore. Doloremque quis iste illum culpa labore quia quam ad, distinctio commodi dolorem totam provident optio, dignissimos rem reiciendis delectus molestias in eaque quae beatae id? Enim id iusto architecto corrupti, molestiae ea facilis explicabo quia, quis dolore, maiores ullam. Voluptatibus itaque voluptate, ea sequi eos architecto, labore nobis nam, eligendi repellat sit aperiam distinctio maiores provident quibusdam natus! Accusantium iste veritatis officiis, iure corrupti placeat qui voluptate adipisci ipsum modi atque nesciunt animi laborum pariatur nulla saepe inventore provident velit nostrum excepturi nemo! Corrupti possimus animi dolorem. Eaque dignissimos debitis fuga aliquam aut! Vel laudantium nobis aliquam impedit, voluptates neque fuga enim repudiandae hic eligendi provident magni illo reprehenderit deserunt blanditiis. Dicta, numquam. Doloremque et adipisci aut! In, aperiam natus? Aliquam consequatur neque corrupti amet? Ipsam beatae in quisquam, atque deleniti officiis, ex ea incidunt impedit, magnam illo fugiat provident commodi obcaecati! Facere, molestiae accusamus atque beatae reiciendis, totam commodi suscipit quo rem illo iusto ut? Tenetur quae accusantium accusamus repellat fugit porro sequi eius alias voluptatibus, commodi, excepturi, ipsa asperiores tempora exercitationem rem numquam magni atque error qui repellendus corporis? Esse, labore exercitationem iste voluptas, provident vero quod, ab illo laboriosam unde totam eligendi non nam voluptatibus sequi repellat quia. Recusandae earum dignissimos minima eum esse non repudiandae explicabo tempore facere. Laudantium rerum dolorem blanditiis voluptatibus est modi, quis ipsum aliquam, quisquam id alias eaque? Officia dolor iste dignissimos culpa vero laborum non doloremque rerum nesciunt aut, sapiente illo atque, porro reiciendis beatae dolorum voluptas saepe pariatur aspernatur, rem quaerat? Corrupti, doloremque eum voluptatibus laudantium similique quidem maiores provident dicta voluptates excepturi harum culpa. Ratione eveniet enim molestiae fugit suscipit eligendi ab magnam debitis beatae. Deserunt, consequatur hic sapiente nobis, doloremque amet non consectetur nisi rem, voluptate nam dolor velit ab? Ducimus assumenda natus ipsum nemo tempora odio ad quo esse ipsa explicabo?</p>
-    
+                <!-- skill-3 -->
+                <div class="skill-box">
+                    <div class="skill-info">
+                        <h2>JAVASCRIPT</h2>
+                        <h2>85%</h2>
+                    </div>
+                    <div class="skill-outer-line">
+                        <div class="skill-inner-line" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <!-- skill-4 -->
+                <div class="skill-box">
+                    <div class="skill-info">
+                        <h2>REACT JS</h2>
+                        <h2>50%</h2>
+                    </div>
+                    <div class="skill-outer-line">
+                        <div class="skill-inner-line" style="width: 50%;"> </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+        <!-- skills section End -->
+        <!-- .................................................... -->
+        
+        
+        <!-- resume section start -->
+
+        <section id="resume">
+            <h1 class="sub-heading">Resume</h1>
+            <div class="divider"></div>
+            <p class="sub-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur beatae expedita
+                possimus sed iusto voluptates suscipit necessitatibus vero repellendus eum perferendis inventore cumque
+                sapiente sequi nobis voluptate dolorem tempore nihil nisi hic, officia maiores. Error quam, commodi eius
+                quo soluta officia fugit sequi repellendus mollitia eligendi consectetur recusandae, expedita amet!</p>
+            <!-- Left-col -->
+            <div class="resume-row">
+                <div class="resume-cols">
+                    <h2>summary</h2>
+
+                    <div class="my-info">
+                        <h3>Amit Gupta</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In animi veritatis quasi,
+                            voluptatem delectus facilis blanditiis, laudantium nam dolorem dolores eligendi rerum eum
+                            quam doloremque atque odit quisquam corporis et quod ipsam, magni fuga eius! Quibusdam non,
+                            cupiditate quod dolorum quas deleniti, nihil in recusandae animi culpa exercitationem nam
+                            illum?</p>
+                        <ul>
+                            <li>poretland par 127,orlando, fl</li>
+
+
+                            <li>(123) 456-7891</li>
+                            <li>amit.xyz @gmail.com</li>
+                        </ul>
+                    </div>
+                    <h2>Education</h2>
+                    <div class="my-edu">
+                        <h3>B.tech in Civil Engg</h3>
+                        <span class="sp-box">2015-2016</span>
+                        <p>United Institute Of Technology Allahabad</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium enim quidem autem fugit
+                            voluptatem recusandae rerum, provident repudiandae dolor earum?</p>
+
+                    </div>
+                </div>
+                <!--Right Col-->
+                <div class="resume-cols">
+                    <h2>Professional Experiance</h2>
+                    <div class="pro-exp">
+                        <h3>SENIOR GRAPHIC DESIGN SPECIALIST</h3>
+                        <span class="sp-box">2019-present</span>
+                        <p>Experion, New York,NY </p>
+
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum at ad quibusdam?</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum at ad quibusdam?</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum at ad quibusdam?</li>
+
+                        </ul>
+
+                    </div>
+                    <div class="pro-exp">
+                        <h3>GRAPHIC DESIGN SPECIALIST</h3>
+                        <span class="sp-box">2017-2018</span>
+                        <p>Experion, New York,NY </p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum at ad quibusdam?</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum at ad quibusdam?</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum at ad quibusdam?</li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- resume section end -->
+        <!-- ----------------------------------------------------------------- -->
+        <!-- =====Portfolio Section Start -->
+        <section id="portfolio">
+            <h1 class="sub-heading">Portfolio</h1>
+            <div class="divider"></div>
+            <p class="sub-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius ea ullam nulla iusto
+                blanditiis consectetur ipsum atque possimus iste delectus, perspiciatis aliquam, quis vitae voluptatibus
+                hic voluptates rerum culpa illo quia. Commodi asperiores iste cupiditate aliquid. Tenetur eos officia,
+                maiores aut a exercitationem ratione placeat reiciendis quia vero, atque aperiam?</p>
+
+            <div class="port-row">
+
+                <!-- portfolio item- 1 -->
+                <div class="port-item">
+                    <div class="port-img">
+                        <img src="https://via.placeholder.com/200" alt="">
+                    </div>
+                    <div class="port-info">
+                        <h4>WordPress</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, dolorum.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+
+                <!-- portfolio item- 2 -->
+                <div class="port-item">
+                    <div class="port-img">
+                        <img src="https://via.placeholder.com/200" alt="">
+                    </div>
+                    <div class="port-info">
+                        <h4>WordPress</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, dolorum.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+
+                <!-- portfolio item- 3 -->
+                <div class="port-item">
+                    <div class="port-img">
+                        <img src="https://via.placeholder.com/200" alt="">
+                    </div>
+                    <div class="port-info">
+                        <h4>WordPress</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, dolorum.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+
+                <!-- portfolio item- 4 -->
+                <div class="port-item">
+                    <div class="port-img">
+                        <img src="https://via.placeholder.com/200" alt="">
+                    </div>
+                    <div class="port-info">
+                        <h4>WordPress</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, dolorum.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+
+                <!-- portfolio item- 5 -->
+                <div class="port-item">
+                    <div class="port-img">
+                        <img src="https://via.placeholder.com/200" alt="">
+                    </div>
+                    <div class="port-info">
+                        <h4>WordPress</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, dolorum.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+
+                <!-- portfolio item- 6 -->
+                <div class="port-item">
+                    <div class="port-img">
+                        <img src="https://via.placeholder.com/200" alt="">
+                    </div>
+                    <div class="port-info">
+                        <h4>WordPress</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, dolorum.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+        <!-- -========Portfolio Section End -->
+        <!-- <--------------------------------------------------------- -->
+
+        <!-- ========Services Section Start============ -->
+        <section id="service">
+            <h1 class="sub-heading">Services</h1>
+            <div class="divider"></div>
+            <p class="sub-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius ea ullam nulla iusto
+                blanditiis consectetur ipsum atque possimus iste delectus, perspiciatis aliquam, quis vitae voluptatibus
+                hic voluptates rerum culpa illo quia. Commodi asperiores iste cupiditate aliquid. Tenetur eos officia,
+                maiores aut a exercitationem ratione placeat reiciendis quia vero, atque aperiam?</p>
+            <div class="service-row">
+                <!-- service-1 -->
+                <div class="service-box">
+                    <div class="icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <div class="ser-info">
+                        <h4>lorem ipsum</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ducimus maiores eaque
+                            quae aspernatur quisquam.</p>
+
+                    </div>
+                </div>
+                <!-- service-2 -->
+                <div class="service-box">
+                    <div class="icon">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
+                    <div class="ser-info">
+                        <h4>lorem ipsum</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ducimus maiores eaque
+                            quae aspernatur quisquam.</p>
+
+                    </div>
+                </div>
+                <!-- service-3 -->
+                <div class="service-box">
+                    <div class="icon">
+                        <i class="fa-solid fa-chart-bar"></i>
+                    </div>
+                    <div class="ser-info">
+                        <h4>lorem ipsum</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ducimus maiores eaque
+                            quae aspernatur quisquam.</p>
+
+                    </div>
+                </div>
+                <!-- service-4 -->
+                <div class="service-box">
+                    <div class="icon">
+                        <i class="fa-solid fa-binoculars"></i>
+                    </div>
+                    <div class="ser-info">
+                        <h4>lorem ipsum</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ducimus maiores eaque
+                            quae aspernatur quisquam.</p>
+
+                    </div>
+                </div>
+                <!-- service-5 -->
+                <div class="service-box">
+                    <div class="icon">
+                        <i class="fa-solid fa-sun"></i>
+                    </div>
+                    <div class="ser-info">
+                        <h4>lorem ipsum</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ducimus maiores eaque
+                            quae aspernatur quisquam.</p>
+
+                    </div>
+                </div>
+                <!-- service-6 -->
+                <div class="service-box">
+                    <div class="icon">
+                        <i class="fa-brands fa-slack"></i>
+                    </div>
+                    <div class="ser-info">
+                        <h4>lorem ipsum</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ducimus maiores eaque
+                            quae aspernatur quisquam.</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- ========Services Section End ============ -->
+        <!-- ---------------------------------------------------------------------------------------------------------------------- -->
+        <!-- /* =================Contact Section Start========= */ -->
+        <section id="contact">
+            <h1 class="sub-heading">Contact</h1>
+            <div class="divider"></div>
+            <p class="sub-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius ea ullam nulla iusto
+                blanditiis consectetur ipsum atque possimus iste delectus, perspiciatis aliquam, quis vitae voluptatibus
+                h reiciendis quia vero, atque aperiam?</p>
+
+            <div class="contact-row">
+
+
+
+                <!-- Left Col -->
+                <div class="contact-left">
+                    <!-- Email Box -->
+                    <div class="icon-box">
+                        <div class="icon"><i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="info">
+                            <h4>Email:</h4>
+                            <p>amit.xyz@gmail.com</p>
+
+                        </div>
+                    </div>
+
+                    <!-- Call Box -->
+                    <div class="icon-box">
+                        <div class="icon"><i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="info">
+                            <h4>Call:</h4>
+                            <p>+91 7052938441</p>
+
+                        </div>
+                    </div>
+
+                    <!-- Location Box -->
+                    <div class="icon-box">
+                        <div class="icon"><i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="info">
+                            <h4>Location:</h4>
+                            <p>Deoria, Uttar Pradesh, India</p>
+
+                        </div>
+                    </div>
+                    <!-- Map -->
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d228326.46599384668!2d83.66674760000002!3d26.597175099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1680871071825!5m2!1sen!2sin" width="100%" height="250" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+
+                    </div>
+
+                </div>
+
+                <!-- Right Col -->
+                <div class="contact-right">
+
+                    <form action="">
+                       <input type="text" name="name" id="name" placeholder="Your Name">
+                       <input type="email" name="email" id="email" placeholder="Your Email">
+                       <input type="text" name="subject" id="subject" placeholder="Subject">
+                        <textarea name="msg" id="msg" rows="9" placeholder="Your Message"></textarea>
+                        <input type="submit" value="Send Message">
+                    </form>
+
+
+                </div>
+            </div>
+
+        </section>
+        <!-- /* =================Contact Section End========= */ -->
+
+
+    </main>
+
+
+
+    <!-- typed.js file (for typing effect) -->
+    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    <!-- Fontawesome Js File (Icon File) -->
+    <script src="https://kit.fontawesome.com/ac47723e62.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
